@@ -1,12 +1,11 @@
+
+/* Configurações gerais da página */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
-}
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #f3ead7;
@@ -23,7 +22,7 @@ body{
     --begeClaro: #fff8e7;
     --marrom: #6b4f2a;
     --douradoSoft: #d8b56d;
-    --texto: #2f2a1f;
+    
 
 }
 /* CONFIGURAÇÃO DAS SEÇÕES*/ 
@@ -219,6 +218,8 @@ nav a:hover{
     font-weight: bold;
 }
 
+/* tecnologias que aparecem após o portifólio*/
+
 .tecnologias{
     margin-top: 20px;
     display: flex;
@@ -287,6 +288,7 @@ nav a:hover{
 #formContato button:hover{
     background-color: var(--verdeMedio);
 }
+/* Rodapé do site */
 
 footer{
     background-color: var(--verdeEscuro);
