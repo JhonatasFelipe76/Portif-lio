@@ -83,13 +83,13 @@ nav a:hover{
 
 /* Seção Sobre Mim*/
 
+
 #sobre{
     background-color: var(--begeClaro);
-    text-align: center;
     font-size: 1.3rem;
+    text-align: center;
 
 }
-
 
 .sobreCard{
     background-color: #fdfcfc;
@@ -105,7 +105,7 @@ nav a:hover{
 
 .sobreTexto h3 {
     color: var(--marrom);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 5px;
 }
 .sobreTexto p{
@@ -116,8 +116,8 @@ nav a:hover{
 
 #formacao{
     text-align: center;
-}
 
+}
 
 .containerFormacao{
     max-width: 800px;
@@ -158,14 +158,14 @@ nav a:hover{
 }
 
 
-/* Portifólio  */
+/* Portfólio  */
 
-#portifolio {
+#portfolio {
     text-align: center;
 
 }
 
-.containterPortifolio{
+.containterPortfolio{
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -208,6 +208,10 @@ nav a:hover{
     transition: 0.3s;
 }
 
+.cardProjeto a:hover {
+    background-color: var(--verdeMedio);
+}
+
 .statusProjeto{
     margin-top: 15px;
     display: inline-block;
@@ -243,9 +247,9 @@ nav a:hover{
 
 #contato{
     background-color: var(--begeClaro);
+    text-align: center;
 
 }
-
 
 .containerContato{
     max-width: 500px;
@@ -264,6 +268,7 @@ nav a:hover{
 #formContato label{
     color: var(--verdeEscuro);
     font-weight: bold;
+    text-align: left;
 }
 #formContato input, #formContato textarea{
     padding: 12px;
@@ -288,8 +293,32 @@ nav a:hover{
 #formContato button:hover{
     background-color: var(--verdeMedio);
 }
-/* Rodapé do site */
 
+/* Mensagem que aparece quando o botão enviar é apertado */
+#mensagemValida {
+    display: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mensagemErro {
+    display: block !important;
+    background-color: #ffe5e5;
+    color: #8b1a1a;
+    border: 2px solid #c0392b;
+}
+
+.mensagemSucesso {
+    display: block !important;
+    background-color: #e6f4df;
+    color: #2f4f24;
+    border: 2px solid #4f6f35;
+}
+
+
+/* Rodapé do site */
 footer{
     background-color: var(--verdeEscuro);
     color: white;
