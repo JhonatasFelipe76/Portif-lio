@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio - Jhonatas Felipe G. da Silva</title>
+    <title>Portfólio - Jhonatas Felipe G. da Silva</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
     <div class="menu"> 
         <a href="#sobre">Sobre Mim</a>
         <a href="#formacao">Formação</a>
-        <a href="#portifolio">Portifólio</a>
+        <a href="#portfolio">Portfólio</a>
         <a href="#contato">Contato</a>
     </div>
 
@@ -28,7 +28,7 @@
     
      
      <h2>Sobre Mim</h2>
-     <div class="sobreCard">
+    <div class="sobreCard">
          
     <div class="sobreTexto">
     <h3>Olá! eu sou</h3>
@@ -92,10 +92,10 @@
  </section>
 
 <!-- Portifólio -->
- <section id="portifolio"> 
-    <h2>Portifólio</h2>
+ <section id="portfolio"> 
+    <h2>Portfólio</h2>
 
-   <div class="containterPortifolio">
+   <div class="containterPortfolio">
 
     <div class="cardProjeto">
         <h3>Projeto Andante com Fé</h3>
@@ -107,11 +107,17 @@
         <p>
         Atualmente estou trabalhando neste projeto acadêmico, que está sendo desenvolvido para auxiliar na organização e ensino de músicos em uma comunidade religiosa.
         usando Java, Spring Framework e MySQL. Será uma plataforma para organizar o repertório musical, disponibilizar aulas para os membros da igreja que ainda estão aprendendo e avisar sobre eventos futuros como ensaio e eventos.
-        <br>
-          <a>
-                Em breve
-        </a>
+        <div class="tecnologias">
+            
+        <span>Java</span>
+        <span>Spring Boot</span>
+        <span>MySQL</span>
+     </div>
         
+        <a>
+            Em breve
+        </a>
+
 
     </div>
 
@@ -123,22 +129,16 @@
 
         <p>Trabalho academico que fiz para praticar e estudas os conceitos de programação orientada a objetos usando apenas Java. Em resumo o usuário tem um cofrinho de moedas que ele pode ver o valor em dolar, euro e real (em uma taxação fictícia). É um projeto simples mas que tenho muito carinho por ser o primeiro trabalho acadêmico que me deixou realmente </p>
     
-        <br>
+        <div class="tecnologias">
+        <span>Java</span>
+        </div>
+        
         <a href="https://github.com/JhonatasFelipe76/Sistema-de-Cambio" target="_blank">
                 Ver Projeto
         </a>
-        
 
     </div> 
 
-
-</div>
-    </div> 
-
-     <div class="tecnologias">
-        <span>Java</span>
-        <span>Spring Boot</span>
-        <span>MySQL</span>
 
 </section>
 
@@ -149,19 +149,27 @@
     <div class="containerContato">
         <!--   Formulário para envio da mensagem de contato -->
     <form id="formContato">
-        <h3>Nome</h3>
+        <label for="nome">Nome</label>
         <input type="text" id="nome" placeholder="Seu nome">
 
-        <h3>E-mail</h3>
+        <label for="email">E-mail</label>
         <input type="email" id="email" placeholder="seu.email@exemplo.com">
 
-        <h3>Mensagem</h3>
+        <label for="mensagem">Mensagem</label>
         <textarea id="mensagem" 
         placeholder="Digite sua mensagem aqui..."></textarea>
+
+        <!-- Mensagem de Validação -->
+
+    <div id="mensagemValida"></div>
+
+
 
         <button type="submit">
             Enviar
         </button>
+
+</div>
     </form>
     </div>
 
